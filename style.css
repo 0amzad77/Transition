@@ -1,0 +1,73 @@
+/* img{
+    max-width: 90%;
+    opacity: 1;
+}
+img:hover {
+    opacity: 0.4;
+} */
+/* img{
+    margin-top: none;
+    height: 75%;
+    width: 42%;
+} */
+.child_service{
+    text-align: center;
+    color: #fff;
+    width: 300px;
+    margin: 25px auto;
+    position: relative;
+    overflow: hidden;
+}
+.child_service img {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+    transition: 0.7s;
+}
+.child_service:hover img {
+   transform: scale(1.2);
+}
+.inner_service{
+    padding: 10% 5%;
+    /* display: none; */
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top: -800px;
+    left: 0;
+    z-index: 99;
+    transition: 0.9s;
+    
+}
+.inner_service::after{
+    background: blue;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.child_service h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35 px;
+    margin-bottom: 0;
+}
+.child_service a{
+    display: inline-block;
+    margin-top: 15 px;
+    background: tomato;
+    color: floralwhite;
+    font-size: 14px;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+.child_service:hover .inner_service{
+    /* display: block; */
+    top: 0px;
+}
